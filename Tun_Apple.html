@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Tún Apple</title>
+  <link rel="stylesheet" href="Tun_Style.css">
+</head>
+<body>
+  <div class="top-left">
+    <img
+      src="z6897647788580_b294576a4ac9d9ff5cddadf8066af2ef.jpg"
+      alt="Avatar"
+      class="avatar fade-in-up"
+      onclick="location.reload()">
+    <span class="name fade-in-up" onclick="location.reload()">Tún Apple</span>
+  </div>
+
+  <div class="main-content">
+    <div class="center-profile fade-in-up">
+      <div class="avatar-wrapper">
+        <img src="z6897647788580_b294576a4ac9d9ff5cddadf8066af2ef.jpg" alt="Avatar Chính" class="main-avatar">
+      </div>
+      <h1 id="typed-name" class="typing-text"></h1>
+    </div>
+
+    <div class="social-title fade-in-up">
+      <span class="social-icon">🌐</span>
+      <span class="social-text">Mạng xã hội của Tún Apple</span>
+    </div>
+
+    <div class="social-list fade-in-up">
+      <!-- Facebook -->
+      <div class="social-box horizontal">
+        <div class="icon-container">
+          <img src="2023_Facebook_icon.svg" alt="Facebook">
+        </div>
+        <div class="social-info">
+          <h3>Facebook</h3>
+          <a href="https://facebook.com/tunapple204" target="_blank" class="btn">Truy cập</a>
+        </div>
+      </div>
+
+      <!-- Zalo -->
+      <div class="social-box horizontal">
+        <div class="icon-container">
+          <img src="Icon_of_Zalo.svg.webp" alt="Zalo">
+        </div>
+        <div class="social-info">
+          <h3>Zalo</h3>
+          <a href="https://zalo.me/84338082692" target="_blank" class="btn">Truy cập</a>
+        </div>
+      </div>
+
+      <!-- TikTok -->
+      <div class="social-box horizontal">
+        <div class="icon-container">
+          <img src="tiktok-icon-black-1-logo.svg" alt="TikTok">
+        </div>
+        <div class="social-info">
+          <h3>TikTok</h3>
+          <a href="https://tiktok.com/@tunapple202" target="_blank" class="btn">Truy cập</a>
+        </div>
+      </div>
+
+      <!-- Telegram -->
+      <div class="social-box horizontal">
+        <div class="icon-container">
+          <img src="Telegram_logo.svg.webp" alt="Telegram">
+        </div>
+        <div class="social-info">
+          <h3>Telegram</h3>
+          <a href="https://t.me/tunapple202" target="_blank" class="btn">Truy cập</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<script>
+  const text = "Tún Apple 💎";
+  const typingTarget = document.getElementById("typed-name");
+  let index = 0;
+
+  function typeEffect() {
+    if (index < text.length) {
+      typingTarget.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeEffect, 120);
+    } else {
+      typingTarget.classList.add("fade-finished", "done");
+    }
+  }
+
+  window.addEventListener("load", typeEffect);
+</script>
