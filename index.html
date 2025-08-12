@@ -82,7 +82,7 @@
     if (index < text.length) {
       typingTarget.textContent += text.charAt(index);
       index++;
-      setTimeout(typeEffect, 120);
+      setTimeout(typeEffect, 250);
     } else {
       typingTarget.classList.add("fade-finished", "done");
     }
@@ -90,6 +90,7 @@
 
   window.addEventListener("load", typeEffect);
 </script>
+
 
 
 
